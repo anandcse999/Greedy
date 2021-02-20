@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="detail"
+            type="com.example.baselibrary.models.TagsList" />
+    </data>
+
+    <TextView
+        android:id="@+id/tvTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/curved_white_border"
+        android:gravity="center"
+        android:padding="@dimen/_4sdp"
+        android:text="@{detail.name}"
+        android:textColor="@color/black"
+        android:layout_marginBottom="@dimen/_3sdp"
+        android:textSize="@dimen/_15sdp">
+
+    </TextView>
+</layout>
